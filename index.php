@@ -32,7 +32,7 @@
                 <div class="modal-body">
                     <h4>Pdf generado</h4>
                     <div class="embed-responsive embed-responsive-21by9">
-                        <iframe class="embed-responsive-item" src=""></iframe>
+                        <iframe id="visorPdf" class="embed-responsive-item" src=""></iframe>
                     </div>
                 </div>
                 <div class="modal-footer">

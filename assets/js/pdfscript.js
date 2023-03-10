@@ -9,7 +9,7 @@ $("#GenerarPdf").on("click",function(e){
         url: "assets/Controller/pdfControl.php",
         data: {action: "GenerarPdf"},
         success: function (response) {
-            console.log(response);
+            $("#visorPdf").attr("src",`data:application/pdf;base64,${response.data}`)
         }
     });
 });
