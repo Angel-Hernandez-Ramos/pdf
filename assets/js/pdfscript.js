@@ -8,23 +8,23 @@ $("#addElement").on("click",function(e){
         <div class="row mt-3">
             <div class="col-md-1">
                 <label for="">#</label>
-                <input type="text" name="info[${numDatos}][cantidad]" class="form-control mt-3">
+                <input type="text" name="info[${numDatos}][0]" class="form-control mt-3">
             </div>
             <div class="col-md-3">
                 <label for="">Nombre</label>
-                <input type="text" name="info[${numDatos}][nombre]" class="form-control mt-3">
+                <input type="text" name="info[${numDatos}][1]" class="form-control mt-3">
             </div>
             <div class="col-md-4">
                 <label for="">Descripción</label>
-                <input type="text" name="info[${numDatos}][descrip]" class="form-control mt-3">
+                <input type="text" name="info[${numDatos}][2]" class="form-control mt-3">
             </div>
             <div class="col-md-2">
                 <label for="">Precio</label>
-                <input type="text" name="info[${numDatos}][precio]" class="form-control mt-3">
+                <input type="text" name="info[${numDatos}][3]" class="form-control mt-3">
             </div>
             <div class="col-md-2">
                 <label for="">Total</label>
-                <input type="text" name="info[${numDatos}][total]" class="form-control mt-3">
+                <input type="text" name="info[${numDatos}][4]" class="form-control mt-3">
             </div>
         </div>
     `);
