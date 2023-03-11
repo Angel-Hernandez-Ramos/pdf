@@ -3,6 +3,7 @@ if (isset($_POST["action"])) {
     require_once '../Model/pdfModel.php';
     require_once '../libs/fpdf183/fpdf.php';
     require_once '../libs/fpdf183/autoload.php';
+    require_once('../libs/phpqrcode/qrlib.php');
     $pdf =  new Generador();
     switch ($_POST["action"]) {
         case 'GenerarPdf':
