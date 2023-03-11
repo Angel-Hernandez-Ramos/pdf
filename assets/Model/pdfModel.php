@@ -27,7 +27,7 @@ class Generador{
             }
             $rengMax = max($rows);
             $pdf->setXY(10,60);
-            $pdf->Ln($rengMax*5);
+            $pdf->Ln($rengMax*5*($key+1));
         }
         $pdf->Close();
         $encode64 = base64_encode($pdf->Output('S'));
