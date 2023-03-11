@@ -7,6 +7,7 @@ if (isset($_POST["action"])) {
     switch ($_POST["action"]) {
         case 'GenerarPdf':
             unset($_POST["action"]);
+            // var_dump($_POST);
             $print = $pdf->GenerarPdf($_POST);
             // var_dump($print);
             echo json_encode($print);
