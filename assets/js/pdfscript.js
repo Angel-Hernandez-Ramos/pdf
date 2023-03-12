@@ -7,7 +7,7 @@ $("#addElement").on("click",function(e){
     $("#infoPdf").append(`
         <div class="row mt-3">
             <div class="col-md-1">
-                <input type="text" placeholder="#" name="info[${numDatos}][0]" class="form-control mt-3">
+                <input type="number" maxlenght="5" placeholder="#" name="info[${numDatos}][0]" class="form-control mt-3">
             </div>
             <div class="col-md-3">
                 <input type="text" placeholder="Nombre" name="info[${numDatos}][1]" class="form-control mt-3">
@@ -17,10 +17,10 @@ $("#addElement").on("click",function(e){
             </div>
             <div class="col-md-2">
                 
-                <input type="text" placeholder="Precio" name="info[${numDatos}][3]" class="form-control mt-3">
+                <input type="number" maxlenght="10" placeholder="Precio" name="info[${numDatos}][3]" class="form-control mt-3">
             </div>
             <div class="col-md-2">
-                <input type="text" placeholder="Total" name="info[${numDatos}][4]" class="form-control mt-3">
+                <input type="number" maxlenght="10" placeholder="Total" name="info[${numDatos}][4]" class="form-control mt-3">
             </div>
         </div>
     `);

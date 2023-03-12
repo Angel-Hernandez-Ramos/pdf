@@ -17,9 +17,77 @@
                 <h3>Generador de PDF</h3>
             </div>
             <form id="infoPdf">
+                <div class="col-md-12">
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <label for="Doctor">Doctor</label>
+                            <input type="text" name="Doctor" id="Doctor" class="form-control">
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <label for="nombrep">Nombre del Paciente</label>
+                            <input type="text" name="nombrep" id="nombrep" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <label for="">Edad</label>
+                            <input maxlenght="3" type="number" name="edadP" id="edadP" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="">Sexo</label>
+                            <input type="text" name="sexoP" id="sexoP" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="">Telefono</label>
+                            <input maxlenght="15" type="number" name="TelefonoP" id="TelefonoP" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <label for="EmailP">Email Paciente</label>
+                            <input type="text" name="EmailP" id="EmailP" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="EmailD">Email Doctor</label>
+                            <input type="text" name="EmailD" id="EmailP" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="OrigenD">Origen</label>
+                            <input type="text" name="OrigenD" id="OrigenD" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <label for="CodInt">Codigo Interno</label>
+                            <input type="text" name="CodInt" id="CodInt" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="Recibo">Recibo</label>
+                            <input type="text" name="Recibo" id="Recibo" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="RealizoP">Realizo:</label> 
+                            <input type="text" name="RealizoP" id="RealizoP" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-4">
+                            <label for="MetodoP">Metodo de Pago</label>
+                            <input type="text" name="MetodoP" id="MetodoP" class="form-control">
+                        </div>
+                        <div class="col-md-4"> 
+                            <label for="RealizoP">Cantidad en Moneda:</label> 
+                            <input type="text" name="RealizoP" id="RealizoP" class="form-control">
+                        </div>
+                        <div class="col-md-4"> 
+                            <label for="infoQR">InfoQr:</label> 
+                            <input maxlenght = "5" type="number" name="infoQR" id="infoQR" class="form-control">
+                        </div>
+                    </div>
+                </div>
                 
-                <button id="addElement" class="btn btn-info" type = "button">Añadir elemento</button>
-                <button id="GenerarPdf" class="btn btn-primary" type = "submit" data-toggle="modal" data-target="#ModalVisualizar">Generar PDF</button>
+                <button id="addElement" class="btn btn-info mt-3" type = "button">Añadir elemento</button>
+                <button id="GenerarPdf" class="btn btn-primary mt-3" type = "submit" data-toggle="modal" data-target="#ModalVisualizar">Generar PDF</button>
             </form>
         </div>
     </div>
