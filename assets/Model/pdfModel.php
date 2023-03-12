@@ -7,9 +7,10 @@ class Generador{
         // var_dump("here");
         $vari = 1;
         $pdf = new FPDF('P','mm', 'A4');
+        // $pdf->Image("https://chart.googleapis.com/chart?chs=150x150&amp;cht=qr&amp;chl=https://puerto53.com&amp;choe=UTF-8", 10, 10, -300);
         
         $pdf->AddPage('P',array(215,279));
-       
+        $pdf->Image("https://chart.googleapis.com/chart?chs=50x50&cht=qr&chl=hola", -5, 18, 45, 0, 'PNG');
         $pdf->SetTextColor(0,0,0);
         $pdf->SetFont('Helvetica','',7);
         $pdf->Image('../images/logobioscan.png', 10, 5, 35, 20);
