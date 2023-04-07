@@ -123,6 +123,7 @@ class Generador{
         $pdf->MultiCell(40, 4,"Restante:\t 34345345s",0,'l',0);
         $pdf->setX(165);
 
+        $pdf->SetFont('Helvetica','B',8);
         $pdf->MultiCell(40, 4,"PAGADO",0,'C',0);
         $pdf->RoundedRect(165, $altG, 43, 20, 2, 'D');
 
