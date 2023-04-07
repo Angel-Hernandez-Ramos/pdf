@@ -35,9 +35,16 @@ $("#infoPdf").on("submit",function(e){
     });
     // console.log(this);
     var doc = new jsPDF();
-
     doc.setFontSize(18);
-    doc.text('A story about a person', 14, 22);
+
+    doc.text(`Paciente: ${$("#nombrep").val()}`, 14, 22);
+    doc.text(`Doctor: ${$("#Doctor").val()}`, 14, 32);
+    doc.text(`Telefono Paciente: ${$("#TelefonoP").val()}`, 14, 42);
+    doc.text(`Genero: ${$("#sexoP").val()}`, 14, 52);
+    doc.text(`Edad: ${$("#edadP").val()}`, 14, 62);
+    doc.text(`Email: ${$("#EmailP").val()}`, 14, 72);
+    doc.text(`Origen: ${$("#OrigenD").val()}`, 14, 82);
+    doc.text(`Proximo QR: ${$("#CodInt").val()}`, 14, 92);    
   
     $("#visorPdf").attr("src",`${doc.output('datauristring')}`);
 
