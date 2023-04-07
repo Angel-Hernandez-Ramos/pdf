@@ -30,16 +30,28 @@ $("#addElement").on("click",function(e){
 $("#infoPdf").on("submit",function(e){
     e.preventDefault()
     let fdata =  new FormData(this);
-    fdata.append("action","GenerarPdf");
-    $.ajax({
-        type: "POST",
-        dataType: "JSON",
-        url: "assets/Controller/pdfControl.php",
-        data: fdata,
-        contentType: false,
-        processData: false,
-        success: function (response) {
-            $("#visorPdf").attr("src",`data:application/pdf;base64,${response.data}`)
-        }
+    $.each(fdata.values, function (indexInArray, valueOfElement) { 
+         console.log(valueOfElement);
     });
+    // console.log(this);
+    var doc = new jsPDF();
+
+    doc.setFontSize(18);
+    doc.text('A story about a person', 14, 22);
+  
+    $("#visorPdf").attr("src",`${doc.output('datauristring')}`);
+
+    // return doc;
+    // fdata.append("action","GenerarPdf");
+    // $.ajax({
+    //     type: "POST",
+    //     dataType: "JSON",
+    //     url: "assets/Controller/pdfControl.php",
+    //     data: fdata,
+    //     contentType: false,
+    //     processData: false,
+    //     success: function (response) {
+    //         $("#visorPdf").attr("src",`data:application/pdf;base64,${response.data}`)
+    //     }
+    // });
 });
